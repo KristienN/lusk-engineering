@@ -1,0 +1,35 @@
+$primaryColor: black;
+$secondaryColor: white;
+
+*::selection{
+    color: white;
+    background-color: #ff0000;
+
+}
+
+#hero{
+    background-image: url('../img/hero-bckg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.selected{
+    position: relative;
+}
+.selected::after{
+    content: '';
+    display: block;
+    margin: auto;
+    height: 5px;
+    width: 50%;
+    top: -120;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-color: #ff0000;
+
+}
