@@ -9,22 +9,61 @@
 }
 
 #hero {
-  background-image: url("../img/hero-bckg.jpg");
+  background-image: url("../img/lusk-hero.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   height: 100vh;
 }
 
+#events, #news {
+  height: 30vh;
+}
+
+.hero-text {
+  position: relative;
+}
+
+.hero-text::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -32px;
+  left: 0;
+  height: 20px;
+  width: 0%;
+  background-color: white;
+  -webkit-animation: slide 1s ease 0.5s forwards;
+          animation: slide 1s ease 0.5s forwards;
+  z-index: 0;
+}
+
+.head-tag {
+  position: relative;
+}
+
+.head-tag::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: 7px;
+  width: 4rem;
+  background-color: #920000;
+  z-index: 0;
+}
+
 .selected {
   position: relative;
+  color: #ff0000;
 }
 
 .selected::after {
   content: '';
   display: block;
   margin: auto;
-  height: 5px;
+  height: 3px;
   width: 50%;
   top: -120;
   left: 0;
@@ -32,5 +71,23 @@
   right: 0;
   position: absolute;
   background-color: #ff0000;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 400px;
+  }
+}
+
+@keyframes slide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 400px;
+  }
 }
 /*# sourceMappingURL=custom.css.map */

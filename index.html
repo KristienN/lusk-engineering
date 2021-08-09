@@ -21,18 +21,18 @@
 
     
     <!-- Navigation -->
-    <nav class="p-3 bg-black bg-opacity-50 fixed inset-x-0 h-25">
+    <nav class="p-3 bg-black bg-opacity-50 fixed inset-x-0  items-center z-10">
         <div class="max-w-6xl container mx-auto flex justify-between text-white">
-            <a href="" class="flex items-center space-x-5">
+            <a href="" class="flex items-center space-x-2">
                 <img src="./img/lusk-logo.png" class="w-28" alt="logo">
-                <span class="text-2xl font-extrabold">Lusk Engineering</span>
+                <span class="text-xl font-extrabold">Lusk Engineering</span>
             </a>
             <div class=" md:flex hidden space-x-10 justify-around items-center">
-                <a href="" class="p-2 font-bold nav-menu-item selected">Home</a>
-                <a href="" class="p-2 font-bold nav-menu-item">About</a>
-                <a href="" class="p-2 font-bold nav-menu-item">Contact</a>
-                <a href="" class="p-2 font-bold nav-menu-item">Portfolio</a>
-                <a href="" class="p-2 font-bold nav-menu-item">Gallery</a>
+                <a href="" class="text-sm p-2 font-bold nav-menu-item selected">Home</a>
+                <a href="" class="text-sm p-2 font-bold nav-menu-item">About</a>
+                <a href="" class="text-sm p-2 font-bold nav-menu-item">Contact</a>
+                <a href="" class="text-sm p-2 font-bold nav-menu-item">Portfolio</a>
+                <a href="" class="text-sm p-2 font-bold nav-menu-item">Gallery</a>
             </div>
 
             <!-- Mobile Menu button -->
@@ -55,31 +55,46 @@
 
     </nav>
 
-    <section id="hero" class="pt-28">
-        <div class="max-w-6xl container">
-
+    <section id="hero" class="pt-32">
+        <div class="max-w-6xl container mx-auto max-h-full">
+            <div class="flex items-center max-h-full">
+                <div class="hero-text text-7xl text-white font-extrabold my-48">
+                    <h1>Delivering</h1>
+                    <h1>Excellence<h1>
+                    <div class="items-end">
+                        <a href="" class="p-3 my-5 mx-auto bg-red-800 text-sm rounded">View Our Portfolio</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <main>
+    <section class="p-6">
+        <div class="max-w-6xl container mx-auto">
+            <div class="flex justify-between items-center">
+                <div id="events">
+                    <h1 class="head-tag text-4xl text-black font-bold">Events</h1>
+                </div>
+                <div id="news">
+                    <h1 class="head-tag text-4xl text-black font-bold">News</h1>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-    </main>
-
-    <footer class="p-6 bg-red-500">
+    <footer class="p-6 bg-black text-white">
         <div class="max-w-6xl container mx-auto">
             <div class="flex">
-                <div>
+                <!-- <div>
                     <a href="">About</a>
                     <a href="">Porfolio</a>
                     <a href="">Careers</a>
-                </div>
+                </div> -->
             </div>
             <div class="text-center mx-auto">
                 &copy; Copyright <strong><span>Lusk Engineering</span></strong>. All Rights Reserved
             </div>
         </div>
-        
     </footer>
     
     <script src="./js/main.js"></script>
