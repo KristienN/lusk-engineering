@@ -18,7 +18,7 @@ body{
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 #map {
@@ -131,7 +131,6 @@ body{
 
 @media screen and (max-width: 800px){
     #hero{
-        overflow-y: hidden;
     }
     @keyframes slide{
     0%{
