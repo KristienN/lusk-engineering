@@ -66,8 +66,10 @@
   top: 50px;
   left: 0;
   height: 7px;
-  width: 4rem;
+  width: 0rem;
   background-color: #920000;
+  -webkit-animation: headslide 1s ease 0.5s forwards;
+          animation: headslide 1s ease 0.5s forwards;
   z-index: 0;
 }
 
@@ -81,13 +83,15 @@
   display: block;
   margin: auto;
   height: 3px;
-  width: 50%;
+  width: 0%;
   top: -120;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
   background-color: #ff0000;
+  -webkit-animation: selectslide 1s ease 0.5s forwards;
+          animation: selectslide 1s ease 0.5s forwards;
 }
 
 @-webkit-keyframes slide {
@@ -105,6 +109,42 @@
   }
   100% {
     width: 400px;
+  }
+}
+
+@-webkit-keyframes selectslide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes selectslide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@-webkit-keyframes headslide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 4rem;
+  }
+}
+
+@keyframes headslide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 4rem;
   }
 }
 /*# sourceMappingURL=custom.css.map */
