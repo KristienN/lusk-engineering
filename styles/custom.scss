@@ -7,6 +7,10 @@ $secondaryColor: white;
 
 }
 
+body{
+    overflow-x: hidden;
+}
+
 #hero{
     background-image: url('../img/lusk-hero.jpg');
     background-repeat: no-repeat;
