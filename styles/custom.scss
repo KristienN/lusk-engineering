@@ -17,6 +17,21 @@ $secondaryColor: white;
     overflow-x: hidden;
 }
 
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+#img-head{
+    background-image: url('../img/lusk-hero.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 30vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 #events, #news{
     height: 30vh;
 }

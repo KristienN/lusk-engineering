@@ -8,10 +8,22 @@ menuBtn.addEventListener('click', ()=> {
 
 navBtns.forEach(n => {
     n.addEventListener('click', (e)=>{
-        e.preventDefault();
-        console.log('clicked!')
         let remove = document.querySelector('.selected')
         remove.classList.remove('selected')
         n.classList.add('selected')
     })
 })
+
+
+function initMap() {
+  const office = { lat: -17.806957794936924, lng: 31.04039995512634 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 16,
+    center: office,
+  });
+
+  const marker = new google.maps.Marker({
+    position: office,
+    map: map,
+  });
+} 

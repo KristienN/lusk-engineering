@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zimbabwe's Leading Engineers - Lusk Engineering</title>
+    <title>Contact Us - Lusk Engineering</title>
 
     <!-- on-page SEO -->
     <meta name="description" content="Zimbabwe's leading engineering firm.">
     <meta name="keywords">
-    <meta name="author">
+    <meta name="author" content="dev.middleman">
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
@@ -28,9 +28,9 @@
                 <span class="text-xl font-extrabold">Lusk Engineering</span>
             </a>
             <div class=" md:flex hidden space-x-10 justify-around items-center">
-                <a href="./index.html" class="text-sm p-2 font-bold nav-menu-item selected">Home</a>
+                <a href="./index.html" class="text-sm p-2 font-bold nav-menu-item">Home</a>
                 <a href="./about.html" class="text-sm p-2 font-bold nav-menu-item">About</a>
-                <a href="./contact.html" class="text-sm p-2 font-bold nav-menu-item">Contact</a>
+                <a href="./contact.html" class="text-sm p-2 font-bold nav-menu-item selected">Contact</a>
                 <a href="./portfolio.html" class="text-sm p-2 font-bold nav-menu-item">Portfolio</a>
                 <a href="./gallery.html" class="text-sm p-2 font-bold nav-menu-item">Gallery</a>
             </div>
@@ -55,28 +55,41 @@
 
     </nav>
 
-    <section id="hero" class="pt-32">
-        <div class="max-w-6xl container mx-auto max-h-full">
-            <div class="flex items-center justify-center lg:justify-start max-h-full">
-                <div class="hero-text text-7xl text-white font-extrabold my-48">
-                    <h1>Delivering</h1>
-                    <h1>Excellence<h1>
-                    <div class="items-end">
-                        <a href="./portfolio.html" class="p-3 my-5 mx-auto bg-red-800 text-sm rounded transition duration-500 ease-in-out hover:bg-white hover:text-red-800 transform hover:translate-y-1 hover:scale-110">View Our Portfolio</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="img-head" class="pt-32"></section>
 
     <section class="p-6">
         <div class="max-w-6xl container mx-auto">
-            <div class="flex justify-between items-center">
-                <div id="events">
-                    <h1 class="head-tag text-4xl text-black font-bold">Events</h1>
+            <div class="block items-center">
+                <div class="my-6 flex justify-between">
+                    <div class="w-1/2">
+                        <h1 class="head-tag text-4xl text-black font-bold">Contact Us</h1>
+                    </div>
+                    <div class="w-1/2">
+                        <p>Form to go here!</p>
+                    </div>
                 </div>
-                <div id="news">
-                    <h1 class="head-tag text-4xl text-black font-bold">News</h1>
+
+                <div class="my-12 py-8">
+                    <div class="flex justify-between">
+                        <div class="w-1/2">
+                            <h1 class="head-tag text-4xl text-black font-bold">Our Details</h1>
+                        </div>
+                        <div class="w-1/2">
+                            <h4>Phone</h4>
+                            <p class="p-6 pl-0 text-lg my-3">+263 77 216 3320</p>
+
+                            <h4>Email</h4>
+                            <p class="p-6 pl-0 text-lg my-3">info@luskengineering.com</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="my-12">
+                    <h1 class="head-tag text-4xl text-black font-bold">Where Can you find us?</h1>
+                    <h4 class="p-6 pl-0 text-lg mt-3">Address</h4>
+                    <p class="p-6 pl-0 text-lg mb-3">Avondale, Harare, Zimbabwe</p>
+                    <div id="map"></div>
                 </div>
             </div>
         </div>
@@ -97,6 +110,7 @@
         </div>
     </footer>
     
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdNcrv7yyNcjsvUG7881fuukn2cdtOl5E&callback=initMap&libraries=&v=weekly" async ></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
