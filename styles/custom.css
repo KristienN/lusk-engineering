@@ -147,4 +147,26 @@
     width: 4rem;
   }
 }
+
+@media screen and (max-width: 800px) {
+  #hero {
+    overflow-y: hidden;
+  }
+  @-webkit-keyframes slide {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 300px;
+    }
+  }
+  @keyframes slide {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 300px;
+    }
+  }
+}
 /*# sourceMappingURL=custom.css.map */

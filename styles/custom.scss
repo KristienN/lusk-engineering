@@ -122,3 +122,20 @@ $secondaryColor: white;
         width: 4rem;
     }
 }
+
+// media queries
+
+@media screen and (max-width: 800px){
+    #hero{
+        overflow-y: hidden;
+    }
+    @keyframes slide{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 300px;
+    }
+}
+}
