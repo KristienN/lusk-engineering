@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Lusk Engineering</title>
+
+    <!-- on-page SEO -->
+    <meta name="description" content="Zimbabwe's leading engineering firm.">
+    <meta name="keywords">
+    <meta name="author" content="dev.middleman">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Assets -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/custom.css">
+</head>
+<body>
+
+    
+    <!-- Navigation -->
+    <nav class="p-1 pr-3 sm:p-3 bg-black md:bg-opacity-50 md:fixed md:inset-x-0  items-center md:z-10">
+        <div class="max-w-6xl container mx-auto flex justify-between text-white">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="./img/lusk-logo.png" class="w-24" alt="logo">
+                <span class="hidden sm:block text-xl font-extrabold">Lusk Engineering</span>
+            </a>
+            <div class=" md:flex hidden space-x-10 justify-around items-center">
+                <a href="./index.html" class="text-sm p-2 font-bold nav-menu-item hover:text-red-800">Home</a>
+                <a href="./about.html" class="text-sm p-2 font-bold nav-menu-item hover:text-red-800">About</a>
+                <a href="./contact.html" class="text-sm p-2 font-bold nav-menu-item hover:text-red-800" >Contact</a>
+                <a href="./portfolio.html" class="text-sm p-2 font-bold nav-menu-item hover:text-red-800">Portfolio</a>
+                <a href="./gallery.html" class="text-sm p-2 font-bold nav-menu-item selected">Gallery</a>
+            </div>
+            <!-- Mobile Menu button -->
+            <button type="button" class="mobile-menu-btn flex items-center justify-center md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden items-center pt-4 text-white font-bold transtion duration-500">
+            <a href="./index.html" class="block p-6 hover:bg-red-800 rounded transtion duration-200 ease-in-out">Home</a>
+            <a href="./about.html" class="block p-6 hover:bg-red-800 rounded transtion duration-200 ease-in-out">About</a>
+            <a href="./contact.html" class="block p-6 hover:bg-red-800 rounded transtion duration-200 ease-in-out">Contact</a>
+            <a href="./portfolio.html" class="block p-6 hover:bg-red-800 rounded transtion duration-200 ease-in-out">Portfolio</a>
+            <a href="./gallery.html" class="block p-6 hover:bg-red-800 rounded transtion duration-200 ease-in-out">Gallery</a>
+        </div>
+    </nav>
+
+    <section id="img-head-gallery" class="pt-32"></section>
+
+    <section class="p-6">
+        <div class="max-w-6xl container mx-auto">
+            <div class="block items-center">
+                <div class="my-12">
+                    <h1 class="head-tag text-4xl text-black font-bold">Gallery</h1>
+                    <div class="block md:flex justify-around md:space-x-8">
+
+                        <div class="flex flex-col justify-center items-centre my-12 bg-white md:w-1/2">
+                            <img src="./img/lusk-portfolio.jpg" class="w-full h-64" alt="">
+                            <div class="block p-3 border border-black">
+                                <h1 class="font-bold text-lg">Title</h1>
+                                <h4 class="font-italic text-sm'">Date</h4>
+                                <h2 class="font-semibold text-md">location</h2>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col justify-centre items-centre my-12 bg-white md:w-1/2">
+                            <img src="./img/lusk-portfolio.jpg" class="w-full h-64" alt="">
+                            <div class="block p-3 border border-black">
+                                <h1 class="font-bold text-lg">Title</h1>
+                                <h4 class="font-italic text-sm">Date</h4>
+                                <h2 class="font-semibold text-md">location</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="p-6 bg-black md:bg-red-800 text-white mt-10">
+        <div class="max-w-6xl container mx-auto">
+            <div class="block md:flex justify-around">
+                <div class="flex flex-col p-5 text-center">
+                    <h2 class="font-bold text-2xl my-3">Social Links</h2>
+                    <a href="" class="text-center hover:text-red-800 md:hover:text-black">Facebook</a>
+                    <a href="" class="text-center hover:text-red-800 md:hover:text-black">LinkedIn</a>
+                    <a href="" class="text-center hover:text-red-800 md:hover:text-black">Twitter</a>
+                </div>
+                <div class="flex flex-col p-5 text-center">
+                    <h2 class="font-bold text-2xl my-3">Page Links</h2>
+                    <a href="about.html" class="text-center hover:text-red-800 md:hover:text-black">About</a>
+                    <a href="portfolio.html" class="text-center hover:text-red-800 md:hover:text-black">Porfolio</a>
+                    <a href="contact.html" class="text-center hover:text-red-800 md:hover:text-black">Contact</a>
+                    <a href="gallery.html" class="text-center hover:text-red-800 md:hover:text-black">Gallery</a>
+                </div>
+                <div class="flex flex-col p-5">
+                    <a href="index.html" class="flex justify-center items-center space-x-2">
+                        <img src="./img/lusk-logo.png" class="w-24" alt="logo">
+                        <span class="hidden sm:block text-xl font-extrabold">Lusk Engineering</span>
+                    </a>
+                    <div class="flex flex-col">
+                        <div class="flex justify-center text-black">
+                            <button class="bg-red-800 md:bg-black text-white p-2 hover:bg-red-600">Sign Up</button>
+                            <input type="email" class="p-2 bg-white border border-black" placeholder="Newsletter">
+                        </div>
+                        <label for="email" class="text-center text-sm">Please enter email to sign-up to our newsletter!</label>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mx-auto mt-12">
+                &copy; Copyright <strong><span>Lusk Engineering</span></strong>. All Rights Reserved
+            </div>
+            <div class="text-center text-sm mx-auto mt-5">
+                <code class="text-purple-800 md:text-black">&lt; designed by <a href="">dev.middleman</a> /&gt;</code>
+            </div>
+        </div>
+    </footer>  
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>

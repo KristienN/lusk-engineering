@@ -21,38 +21,34 @@
 
     
     <!-- Navigation -->
-    <nav class="p-3 bg-black bg-opacity-50 md:fixed md:inset-x-0  items-center md:z-10">
+    <nav class="p-1 pr-3 sm:p-3 bg-black md:bg-opacity-50 md:fixed md:inset-x-0  items-center md:z-10">
         <div class="max-w-6xl container mx-auto flex justify-between text-white">
-            <a href="" class="flex items-center space-x-2">
-                <img src="./img/lusk-logo.png" class="w-28" alt="logo">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="./img/lusk-logo.png" class="w-24" alt="logo">
                 <span class="hidden sm:block text-xl font-extrabold">Lusk Engineering</span>
             </a>
             <div class=" md:flex hidden space-x-10 justify-around items-center">
-                <a href="./index.html" class="text-sm p-2 font-bold nav-menu-item">Home</a>
-                <a href="./about.html" class="text-sm p-2 font-bold nav-menu-item">About</a>
+                <a href="./index.html" class="text-sm p-2 font-bold nav-menu-item hover:text-red-800">Home</a>
+                <a href="./about.html" class="text-sm p-2 font-bold nav-menu-item hover:text-red-800">About</a>
                 <a href="./contact.html" class="text-sm p-2 font-bold nav-menu-item selected">Contact</a>
-                <a href="./portfolio.html" class="text-sm p-2 font-bold nav-menu-item">Portfolio</a>
-                <a href="./gallery.html" class="text-sm p-2 font-bold nav-menu-item">Gallery</a>
+                <a href="./portfolio.html" class="text-sm p-2 font-bold nav-menu-item hover:text-red-800">Portfolio</a>
+                <a href="./gallery.html" class="text-sm p-2 font-bold nav-menu-item hover:text-red-800">Gallery</a>
             </div>
-
             <!-- Mobile Menu button -->
             <button type="button" class="mobile-menu-btn flex items-center justify-center md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
                 </svg>
             </button>
-
         </div>
-
         <!-- Mobile Menu -->
-        <div class="mobile-menu hidden md:hidden items-center pt-4 text-white font-bold">
-            <a href="./index.html" class="block p-6 hover:bg-red-800 rounded">Home</a>
-            <a href="./about.html" class="block p-6 hover:bg-red-800 rounded">About</a>
-            <a href="./contact.html" class="block p-6 hover:bg-red-800 rounded">Contact</a>
-            <a href="./portfolio.html" class="block p-6 hover:bg-red-800 rounded">Portfolio</a>
-            <a href="./gallery.html" class="block p-6 hover:bg-red-800 rounded">Gallery</a>
+        <div class="mobile-menu hidden md:hidden items-center pt-4 text-white font-bold transtion duration-500">
+            <a href="./index.html" class="block p-6 hover:bg-red-800 rounded transtion duration-200 ease-in-out">Home</a>
+            <a href="./about.html" class="block p-6 hover:bg-red-800 rounded transtion duration-200 ease-in-out">About</a>
+            <a href="./contact.html" class="block p-6 hover:bg-red-800 rounded transtion duration-200 ease-in-out">Contact</a>
+            <a href="./portfolio.html" class="block p-6 hover:bg-red-800 rounded transtion duration-200 ease-in-out">Portfolio</a>
+            <a href="./gallery.html" class="block p-6 hover:bg-red-800 rounded transtion duration-200 ease-in-out">Gallery</a>
         </div>
-
     </nav>
 
     <section id="img-head" class="pt-32"></section>
@@ -83,22 +79,22 @@
                         <form method="POST" action="" class="px-10 block">
                             <div class="flex flex-col md:flex-row items-center justify-between mb-4">
                                 <label for="name" class="font-bold">Name</label>
-                                <input class="p-2 pl-0 rounded w-full sm:w-3/4" type="text" name="name" id="name" placeholder="Name" required>
+                                <input class="p-2 rounded w-full sm:w-3/4 border border-black" type="text" name="name" id="name" placeholder="Name" required>
                             </div>
 
                             <div class="flex flex-col md:flex-row items-center justify-between mb-4">
                                 <label for="name" class="font-bold">Email</label>
-                                <input class="p-2 pl-0 rounded w-full sm:w-3/4" type="email" name="email" id="email" placeholder="eg. example@email.com" required>
+                                <input class="p-2 rounded w-full sm:w-3/4 border border-black" type="email" name="email" id="email" placeholder="eg. example@email.com" required>
                             </div>
 
                             <div class="flex flex-col md:flex-row items-center justify-between mb-4">
                                 <label for="name" class="font-bold">Subject</label>
-                                <input class="p-2 pl-0 rounded w-full sm:w-3/4" type="text" name="subject" id="subject" placeholder="Subject" required>
+                                <input class="p-2 rounded w-full sm:w-3/4 border border-black" type="text" name="subject" id="subject" placeholder="Subject" required>
                             </div>
 
                             <div class="flex flex-col md:flex-row items-center justify-between mb-4">
                                 <label for="name" class="font-bold">Message</label>
-                                <textarea class="p-2 pl-0 rounded h-30 w-full sm:w-3/4" type="text" name="message" id="message" placeholder="Message" required>
+                                <textarea class="p-2 rounded h-30 w-full sm:w-3/4 border border-black" type="text" name="message" id="message" placeholder="Message" required>
                                 </textarea>
                             </div>
 
@@ -125,23 +121,44 @@
         </div>
     </section>
 
-    <footer class="p-6 bg-black text-white">
+    <footer class="p-6 bg-black md:bg-red-800 text-white mt-10">
         <div class="max-w-6xl container mx-auto">
-            <div class="flex">
-                <!-- <div>
-                    <a href="">About</a>
-                    <a href="">Porfolio</a>
-                    <a href="">Careers</a>
-                </div> -->
+            <div class="block md:flex justify-around">
+                <div class="flex flex-col p-5 text-center">
+                    <h2 class="font-bold text-2xl my-3">Social Links</h2>
+                    <a href="" class="text-center hover:text-red-800 md:hover:text-black">Facebook</a>
+                    <a href="" class="text-center hover:text-red-800 md:hover:text-black">LinkedIn</a>
+                    <a href="" class="text-center hover:text-red-800 md:hover:text-black">Twitter</a>
+                </div>
+                <div class="flex flex-col p-5 text-center">
+                    <h2 class="font-bold text-2xl my-3">Page Links</h2>
+                    <a href="about.html" class="text-center hover:text-red-800 md:hover:text-black">About</a>
+                    <a href="portfolio.html" class="text-center hover:text-red-800 md:hover:text-black">Porfolio</a>
+                    <a href="contact.html" class="text-center hover:text-red-800 md:hover:text-black">Contact</a>
+                    <a href="gallery.html" class="text-center hover:text-red-800 md:hover:text-black">Gallery</a>
+                </div>
+                <div class="flex flex-col p-5">
+                    <a href="index.html" class="flex justify-center items-center space-x-2">
+                        <img src="./img/lusk-logo.png" class="w-24" alt="logo">
+                        <span class="hidden sm:block text-xl font-extrabold">Lusk Engineering</span>
+                    </a>
+                    <div class="flex flex-col">
+                        <div class="flex justify-center text-black">
+                            <button class="bg-red-800 md:bg-black text-white p-2 hover:bg-red-600">Sign Up</button>
+                            <input type="email" class="p-2 bg-white border border-black" placeholder="Newsletter">
+                        </div>
+                        <label for="email" class="text-center text-sm">Please enter email to sign-up to our newsletter!</label>
+                    </div>
+                </div>
             </div>
-            <div class="text-center mx-auto">
+            <div class="text-center mx-auto mt-12">
                 &copy; Copyright <strong><span>Lusk Engineering</span></strong>. All Rights Reserved
             </div>
             <div class="text-center text-sm mx-auto mt-5">
-                <code class="text-purple-800">&lt; designed by <a href="">dev.middleman</a> /&gt;</code>
+                <code class="text-purple-800 md:text-black">&lt; designed by <a href="">dev.middleman</a> /&gt;</code>
             </div>
         </div>
-    </footer>
+    </footer>  
     
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdNcrv7yyNcjsvUG7881fuukn2cdtOl5E&callback=initMap&libraries=&v=weekly" async ></script>
     <script src="./js/main.js"></script>

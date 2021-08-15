@@ -1,9 +1,6 @@
-$primaryColor: black;
-$secondaryColor: white;
-
 *::selection{
     color: white;
-    background-color: #ff0000;
+    background-color: #6c0000;
 
 }
 
@@ -32,7 +29,37 @@ body{
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
-    height: 30vh;
+    height: 40vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#img-head-about{
+    background-image: url('../img/lusk-about.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#img-head-gallery{
+    background-image: url('../img/lusk-gallery.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#img-head-portfolio{
+    background-image: url('../img/lusk-portfolio.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
     width: 100vw;
     overflow-x: hidden;
 }
@@ -43,7 +70,6 @@ body{
 
 .hero-text{
     position: relative;
-
     &::after{
         content: '';
         display: block;

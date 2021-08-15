@@ -21,41 +21,37 @@
 
     
     <!-- Navigation -->
-    <nav class="p-3 bg-black bg-opacity-50 md:fixed md:inset-x-0  items-center md:z-10">
+    <nav class="p-1 pr-3 sm:p-3 bg-black md:bg-opacity-50 md:fixed md:inset-x-0  items-center md:z-10">
         <div class="max-w-6xl container mx-auto flex justify-between text-white">
-            <a href="" class="flex items-center space-x-2">
-                <img src="./img/lusk-logo.png" class="w-28" alt="logo">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="./img/lusk-logo.png" class="w-24" alt="logo">
                 <span class="hidden sm:block text-xl font-extrabold">Lusk Engineering</span>
             </a>
             <div class=" md:flex hidden space-x-10 justify-around items-center">
-                <a href="./index.html" class="text-sm p-2 font-bold nav-menu-item">Home</a>
+                <a href="./index.html" class="text-sm p-2 font-bold nav-menu-item hover:text-red-800">Home</a>
                 <a href="./about.html" class="text-sm p-2 font-bold nav-menu-item selected">About</a>
-                <a href="./contact.html" class="text-sm p-2 font-bold nav-menu-item">Contact</a>
-                <a href="./portfolio.html" class="text-sm p-2 font-bold nav-menu-item">Portfolio</a>
-                <a href="./gallery.html" class="text-sm p-2 font-bold nav-menu-item">Gallery</a>
+                <a href="./contact.html" class="text-sm p-2 font-bold nav-menu-item hover:text-red-800">Contact</a>
+                <a href="./portfolio.html" class="text-sm p-2 font-bold nav-menu-item hover:text-red-800">Portfolio</a>
+                <a href="./gallery.html" class="text-sm p-2 font-bold nav-menu-item hover:text-red-800">Gallery</a>
             </div>
-
             <!-- Mobile Menu button -->
             <button type="button" class="mobile-menu-btn flex items-center justify-center md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
                 </svg>
             </button>
-
         </div>
-
         <!-- Mobile Menu -->
-        <div class="mobile-menu hidden md:hidden items-center pt-4 text-white font-bold">
-            <a href="./index.html" class="block p-6 hover:bg-red-800 rounded">Home</a>
-            <a href="./about.html" class="block p-6 hover:bg-red-800 rounded">About</a>
-            <a href="./contact.html" class="block p-6 hover:bg-red-800 rounded">Contact</a>
-            <a href="./portfolio.html" class="block p-6 hover:bg-red-800 rounded">Portfolio</a>
-            <a href="./gallery.html" class="block p-6 hover:bg-red-800 rounded">Gallery</a>
+        <div class="mobile-menu hidden md:hidden items-center pt-4 text-white font-bold transtion duration-500">
+            <a href="./index.html" class="block p-6 hover:bg-red-800 rounded transtion duration-200 ease-in-out">Home</a>
+            <a href="./about.html" class="block p-6 hover:bg-red-800 rounded transtion duration-200 ease-in-out">About</a>
+            <a href="./contact.html" class="block p-6 hover:bg-red-800 rounded transtion duration-200 ease-in-out">Contact</a>
+            <a href="./portfolio.html" class="block p-6 hover:bg-red-800 rounded transtion duration-200 ease-in-out">Portfolio</a>
+            <a href="./gallery.html" class="block p-6 hover:bg-red-800 rounded transtion duration-200 ease-in-out">Gallery</a>
         </div>
-
     </nav>
 
-    <section id="img-head" class="pt-32"></section>
+    <section id="img-head-about" class="pt-32"></section>
 
     <section class="p-6">
         <div class="max-w-6xl container mx-auto">
@@ -118,45 +114,44 @@
         </div>
     </section>
 
-    <footer class="p-6 bg-black text-white">
+    <footer class="p-6 bg-black md:bg-red-800 text-white mt-10">
         <div class="max-w-6xl container mx-auto">
-            <div class="flex justify-between items-center">
-                <div class="p-10 flex flex-col justify-center">
-                    <img src="./img/lusk-logo.png" alt="logo" class="h-20 w-20 rounded-pill"/>
-                    <div class="flex justify-around items-center">
-                        <a href="">
-                            <i></i>
-                            <span>Facebook</span>
-                        </a>
-                        <a href="">
-                            <i></i>
-                            <span>LinkedIn</span>
-                        </a>
-                        <a href="">
-                            <i></i>
-                            <span>Instagram</span>
-                        </a>
+            <div class="block md:flex justify-around">
+                <div class="flex flex-col p-5 text-center">
+                    <h2 class="font-bold text-2xl my-3">Social Links</h2>
+                    <a href="" class="text-center hover:text-red-800 md:hover:text-black">Facebook</a>
+                    <a href="" class="text-center hover:text-red-800 md:hover:text-black">LinkedIn</a>
+                    <a href="" class="text-center hover:text-red-800 md:hover:text-black">Twitter</a>
+                </div>
+                <div class="flex flex-col p-5 text-center">
+                    <h2 class="font-bold text-2xl my-3">Page Links</h2>
+                    <a href="about.html" class="text-center hover:text-red-800 md:hover:text-black">About</a>
+                    <a href="portfolio.html" class="text-center hover:text-red-800 md:hover:text-black">Porfolio</a>
+                    <a href="contact.html" class="text-center hover:text-red-800 md:hover:text-black">Contact</a>
+                    <a href="gallery.html" class="text-center hover:text-red-800 md:hover:text-black">Gallery</a>
+                </div>
+                <div class="flex flex-col p-5">
+                    <a href="index.html" class="flex justify-center items-center space-x-2">
+                        <img src="./img/lusk-logo.png" class="w-24" alt="logo">
+                        <span class="hidden sm:block text-xl font-extrabold">Lusk Engineering</span>
+                    </a>
+                    <div class="flex flex-col">
+                        <div class="flex justify-center text-black">
+                            <button class="bg-red-800 md:bg-black text-white p-2 hover:bg-red-600">Sign Up</button>
+                            <input type="email" class="p-2 bg-white border border-black" placeholder="Newsletter">
+                        </div>
+                        <label for="email" class="text-center text-sm">Please enter email to sign-up to our newsletter!</label>
                     </div>
                 </div>
-                <div class="p-10 block">
-                    <a href="block p-4">About</a>
-                    <a href="block p-4">Careers</a>
-                    <a href="block p-4">Gallery</a>
-                    <a href="block p-4">Portfolio</a>
-                </div>
-                <div class="p-10 block">
-                    <a href="block p-4 bg-red-800 text-white">Contact Us</a>
-                    <a href="block p-4 bg-red-800 text-white">View our Portfolio</a>
-                </div>
+            </div>
+            <div class="text-center mx-auto mt-12">
+                &copy; Copyright <strong><span>Lusk Engineering</span></strong>. All Rights Reserved
+            </div>
+            <div class="text-center text-sm mx-auto mt-5">
+                <code class="text-purple-800 md:text-black">&lt; designed by <a href="">dev.middleman</a> /&gt;</code>
             </div>
         </div>
-        <div class="text-center mx-auto">
-            &copy; Copyright <strong><span>Lusk Engineering</span></strong>. All Rights Reserved
-        </div>
-        <div class="text-center text-sm mx-auto mt-5">
-            <code class="text-purple-800">&lt; designed by <a href="">dev.middleman</a> /&gt;</code>
-        </div>
-    </footer>
+    </footer>  
     
     <script src="./js/main.js"></script>
 </body>
