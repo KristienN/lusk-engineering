@@ -161,7 +161,7 @@ navBtns.forEach(n => {
 
 if(galleryContainer){
   gallery.forEach(g => {
-    let card = `<div class="block md:flex justify-around md:space-x-8 min-w-full">
+    let card = `<div class="block md:flex justify-around md:space-x-8 min-w-full" id="${g.id}">
                           <div class="flex flex-col justify-centre items-centre my-12 bg-white border border-black">
                               <div class="md:flex md:space-x-2">
                                   <img src="${g.img1}" class="w-full h-64 mb-2 md:mb-0" alt="">
@@ -183,7 +183,7 @@ if(galleryContainer){
 if(projectContainer){
   projects.forEach(p => {
     let card = `<div class="md:flex justify-centre items-centre my-12 bg-white" id="${p.id}">
-                    <img src="${p.imgs}" class="w-full md:w-1/3 object-cover" alt="">
+                    <a href="gallery.html#${p.id}" class="img-link w-full md:w-1/3"><img src="${p.imgs}" class="w-full h-full object-cover" alt=""></a>
                     <div class="block p-8">
                         <h1 class="font-bold text-2xl mb-4">${p.title}</h1>
                         <hr/>
@@ -192,14 +192,14 @@ if(projectContainer){
                         <p>${p.description}</p>
                         <h2 class="font-semibold text-lg my-4">Client:  ${p.client}</h2>
                         <div class="md:flex md:space-x-8 space-y-4 md:space-y-0 tags my-4">
-                            <span class="block bg-yellow border border-black p-2 text-sm rounded">
+                            <span class="block bg-yellow-500 border border-black p-2 text-sm rounded">
                                 Fuel Farms
                             </span>
-                            <span class="block bg-yellow border border-black p-2 text-sm rounded">
+                            <span class="block bg-yellow-500 border border-black p-2 text-sm rounded">
                                 Service Station
                             </span>
                         </div>
-                        <p class="text-sm text-red">Role: ${p.role}</p>
+                        <p class="text-sm font-bold text-red-500">Role: ${p.role}</p>
                     </div>
                 </div>`
     projectContainer.innerHTML += card
