@@ -2,12 +2,32 @@
 
 const projects = [
     {
+        "title":"Gwayi Shangani to Bulawayo Pipeline -Zimbabwe",
+        "location": "Zimbabwe",
+        "date": "April 2022 - Present",
+        "description": "Project involved the construction of 21km section of the 1,200mm dia GRP Gwayi Shangani to Bulawayo Pipeline for ZINWA",
+        "client": "ZINWA",
+        "role": "Project Manager",
+        "imgs": "./img/portfolio/lusk-gwayi.jpg",
+        "id":"gwayi"
+    },
+    {
+        "title":"Liberation City Service Station",
+        "location": "",
+        "date": "March 2023",
+        "description": "Project involved the construction of a full service station",
+        "client": "",
+        "role": "Design & Management Consultant",
+        "imgs": "./img/portfolio/lusk-liberation.jpg",
+        "id":"liberation"
+    },
+    {
         "title":"Puma Depot Upgrade - Robert G. Mugabe Int'l Airport",
         "location": "Harare",
         "date": "March 2019 - October 2019",
-        "description": "•	Project involved the upgrading of an existing fuel depot for aviation.",
+        "description": "Project involved the upgrading of an existing fuel depot for aviation.",
         "client": "Puma Energy, Zimbabwe",
-        "role": "Project Manager",
+        "role": "Project Design & Management",
         "imgs": "./img/portfolio/lusk-airport.jpg",
         "id":"airport"
     },
@@ -39,6 +59,16 @@ const projects = [
         "client": "Puma energy, Zimbabwe",
         "role": "Management Contractor",
         "imgs": "./img/portfolio/lusk-clipsham.jpg"
+    },
+    {
+        "title":"Maintenance: Surfacing, Paving, Plumbing, Steel Works, Westgate Shopping Centre",
+        "location": "Harare",
+        "date": "April 2017",
+        "description": "Project involved the forecourt surfacing, paving, plumbing and office steel works fixing",
+        "client": "Redan, Zimbabwe",
+        "role": "Management Contractor",
+        "imgs": "./img/portfolio/lusk-westgate-mt.jpg",
+        "id":"westgate-mt"
     },
     {
         "title":"Westgate Service Station",
@@ -73,6 +103,23 @@ const projects = [
 ]
 
 const gallery = [
+    
+    {
+        "title":"Gwayi Shangani to Bulawayo Pipeline -Zimbabwe",
+        "img1": "./img/gallery/lusk-gwayi-1.jpg",
+        "img2": "./img/gallery/lusk-gwayi-2.jpg",
+        "img3": "./img/gallery/lusk-gwayi-3.jpg",
+        "caption": "",
+        "id":"gwayi"
+    },
+    {
+        "title":"Liberation City Service Station",
+        "img1": "./img/gallery/lusk-liberation-1.jpg",
+        "img2": "./img/gallery/lusk-liberation-2.jpg",
+        "img3": "./img/gallery/lusk-liberation-3.jpg",
+        "caption": "Clockwise from top: Tank Farm Construction; Canopy Bases & Plinths; Remote Island Construction & Canopy Installation  in  progress",
+        "id":"liberation"
+    },
     {
         "title": "Puma Depot Upgrade - Robert G. Mugabe Int'l Airport",
         "img1": "./img/gallery/lusk-airport1.jpg",
@@ -108,6 +155,14 @@ const gallery = [
         "caption": "Left to Right(Top to Bottom): - Forecourt & canopy works when complete; rehabilitation of forecourt & canopy; rehabilitation of access roads",
         "id":"clipsham"
         
+    },
+    {
+        "title": "Maintenance: Surfacing, Paving, Plumbing, Steel Works, Westgate Shopping Centre",
+        "img1": "./img/gallery/lusk-westgate-mt-1.jpg",
+        "img2": "./img/gallery/lusk-westgate-mt-2.jpg",
+        "img3": "./img/gallery/lusk-westgate-mt-3.jpg",
+        "caption": "Left to Right(Top to Bottom): - Pump pre-asizing (calibration); Canopy installation in progress; forecourt concrete works",
+        "id":"westgate-mt"
     },
     {
         "title": "Westgate Service Station",
